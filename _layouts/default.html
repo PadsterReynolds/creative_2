@@ -2,12 +2,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>
         {% if page.title %}
@@ -16,6 +13,32 @@
             Default Page Title
         {% endif %}
     </title>
+    {% if page.meta-description %}
+    <meta name="description" content="{{ page.meta-description}}" />
+    {% endif %}
+    <meta name="author" content="">
+
+    <!-- FB OG meta data -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:audio" content=""/>
+    <meta property="og:locale" content=""/>
+
+    <meta property="og:locale:alternate" content=""/>
+    <meta property="og:video" content=""/>
+    <meta property="xpm-enabled" content="false"/>
+
+    <!-- Twitter cards -->
+    <meta name=”twitter:card” content=”summary” />
+    <meta name=”twitter:title” content=”Your title here” />
+    <meta name=”twitter:description” content=”Your 200-character description here” />
+    <meta name=”twitter:url” content=”http://www.yourdomain.com” />
+    <meta name=”twitter:image” content=”http://www.yourdomain.com/image-name.jpg” />
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
