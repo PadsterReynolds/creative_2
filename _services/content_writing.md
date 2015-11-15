@@ -3,4 +3,4 @@ title: Content Writing
 image_path: /img/pen.png
 ---
 
-Fresh, relevent content on-demand
+Fresh, relevant content on-demand
